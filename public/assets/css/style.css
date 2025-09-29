@@ -1,0 +1,54 @@
+@import url('https://fonts.google.com/specimen/Exo');
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Fascinate&display=swap" rel="stylesheet');
+
+body{
+    font-family: 'Exo', sans-serif;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-s{
+    width: 30%;
+}
+
+.col-s img{
+    width: 30%;
+    margin-left: 130px;
+}
+
+h1{
+    text-align: center;
+    font-family: "Arizonia", cursive;
+    font-size: 50px;
+}
+
+header .container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    flex-direction: column; 
+    background-color: rgb(115, 194, 199);
+    width: 100%;
+}
+
+nav ul {
+    display: flex; 
+    justify-content: center; 
+    list-style: none; 
+}
+
+nav ul li {
+	margin: 0 2rem; 
+    margin-bottom: 10px;
+}
+
+
+nav ul li a {
+    color: black; 
+    text-decoration: none; 
+    font-size: 1rem;
+}
