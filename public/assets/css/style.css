@@ -1,5 +1,10 @@
 @import url('https://fonts.google.com/specimen/Exo');
-@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Fascinate&display=swap" rel="stylesheet');
+
+* {
+    margin: 0; /* Supprime les marges par défaut de tous les éléments */
+    padding: 0; /* Supprime les espacements internes par défaut de tous les éléments */
+    box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur et la hauteur des éléments */
+}
 
 body{
     font-family: 'Exo', sans-serif;
@@ -12,26 +17,27 @@ header{
 }
 
 .col-s{
-    width: 30%;
+    width: 100%;
 }
 
 .col-s img{
-    width: 30%;
-    margin-left: 130px;
+    width: 20%;
+    margin-left: -260px;
+    margin-top: -60px;
 }
 
 h1{
     text-align: center;
-    font-family: "Arizonia", cursive;
-    font-size: 50px;
+    font-family: 'Exo', sans-serif;
+    margin-top: 20px;
 }
 
-header .container {
+header{
     display: flex; 
     justify-content: space-between; 
     align-items: center;
     flex-direction: column; 
-    background-color: rgb(115, 194, 199);
+    background-color: rgb(157, 122, 223);
     width: 100%;
 }
 
@@ -48,7 +54,15 @@ nav ul li {
 
 
 nav ul li a {
-    color: black; 
+    color: rgb(226, 221, 221); 
     text-decoration: none; 
     font-size: 1rem;
+    font-weight: bold;
+}
+
+footer{
+    margin-top: 30px;
+    background-color:rgb(157, 122, 223);
+    padding: 20px;
+    text-align: center;
 }
