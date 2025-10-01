@@ -48,7 +48,7 @@ require_once(__DIR__ . "/partials/head.view.php");
             }
             ?>
         </div>
-        <button type="submit" name="register" class="btn btn-secondary mt-5">Inscription</button>
+        <button type="submit" name="register" class="btn btn-warning mt-5">Inscription</button>
     </div>
 </form>
 <?php
