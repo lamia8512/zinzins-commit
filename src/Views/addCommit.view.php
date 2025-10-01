@@ -15,7 +15,7 @@ require_once(__DIR__ . "/partials/head.view.php");
             }
             ?>
         </div>
-        <button type="submit" name="addCommit" class="btn btn-warning mt-5">Commiter !</button>
+        <button type="submit" name="addCommit" class="btn btn-success mt-5">Commiter !</button>
     </div>
 </form>
 <?php
