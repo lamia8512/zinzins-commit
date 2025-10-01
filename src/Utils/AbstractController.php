@@ -19,6 +19,7 @@ abstract class AbstractController
         return false;
     }
 
+
     public function checkFormat($nameInput, $value){
 
         //Vos regex = vos filtres
@@ -82,5 +83,26 @@ abstract class AbstractController
         $this->isNotEmpty($nameInput);
         //retourne mon tableau d'erreur:
         return $this->arrayError;
+    }
+
+    public function errorMessage($myMessage){
+        ?>
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <?= $myMessage ?>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        <?php
+    }
+
+    public function debug ($info){
+        echo '<pre>';
+        var_dump($info);
+        echo '</pre>';
+    }
+
+    public function redirectToRoute($route, $code){
+        http_response_code($code);
+        header("Location: {$route}");
+        exit;
     }
 }
