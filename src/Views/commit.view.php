@@ -55,10 +55,15 @@ require_once(__DIR__ . "/partials/head.view.php");
                             <p><?= $comment->getText(); ?></p>
                         </blockquote>
                         <figcaption class="blockquote-footer">
-                            <!-- si tu a une date de modification tu l'affiche sinon tu affiche la date de création -->
+                            <!-- si tu a une date de mùodification tu l'affiche sinon tu affiche la date de création -->
                             <?= $comment->getModificationDate() ? $comment->getModificationDate() : $comment->getCreationDate(); ?>
                         </figcaption>
                         </figure>
+                        <?php if($_SESSION['user'] && $_SESSION['user']['id_user'] === $comment->getIdUser()){
+                            ?>
+                            <a class="btn btn-warning"  href="/modifCommentaire?id=<?= $comment->getIdComment() ?>">Modifier</a>
+                            <?php
+                        } ?>
                     </div>
                     </div>
                 <?php
