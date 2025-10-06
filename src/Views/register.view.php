@@ -27,7 +27,7 @@ require_once(__DIR__ . "/partials/head.view.php");
             ?>
         </div>
         <div class="form-group">
-            <label for="password" class="form-label">Mot de pase :</label>
+            <label for="password" class="form-label">Mot de passe :</label>
             <input type="password" name="password" id="password" class="form-control">
             <?php 
             if(isset($this->arrayError['password'])){
